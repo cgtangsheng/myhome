@@ -52,6 +52,10 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    public function actionTest(){
+        echo "helllo world";
+    }
+
     public function actionLogin()
     {
         if (!\Yii::$app->user->isGuest) {
